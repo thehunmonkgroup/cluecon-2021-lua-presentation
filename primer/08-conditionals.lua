@@ -5,6 +5,7 @@
 if foo ~= "yes" then
   -- Do something
 end
+
 if foo == 1 then
   -- Do some stuff
 elseif foo == "bar" then

@@ -22,3 +22,6 @@
 
 -> Primer <-
 =========
+
+* Quick overview, not exhaustive
+* Consult [lua.org/manual](https://www.lua.org/manual/) for more
