@@ -1,0 +1,29 @@
+<configuration name="lua.conf" description="LUA Configuration">
+  <settings>
+
+    <!--
+
+      $${base_dir}: FreeSWITCH base dir.
+      ?: placeholder for module name in require statement, eg.:
+
+        /usr/share/lua/5.2/foo.lua
+        require "foo"
+        /usr/share/lua/5.2/?.lua
+
+      For directory nesting, use dots in require statement, eg:
+
+        /usr/share/lua/5.2/foo/bar.lua
+        require "foo.bar"
+        /usr/share/lua/5.2/?.lua
+
+      Multiple declarations supported.
+
+    -->
+
+    <param name="module-directory" value="/usr/lib/x86_64-linux-gnu/lua/5.2/?.so"/>
+
+    <param name="script-directory" value="$${base_dir}/scripts/?.lua"/>
+    <param name="script-directory" value="/usr/share/lua/5.2/?.lua"/>
+
+  </settings>
+</configuration>

@@ -1,0 +1,16 @@
+<configuration name="lua.conf" description="LUA Configuration">
+  <settings>
+
+    <!--
+
+      Multiple declarations supported.
+
+      Script arguments supported.
+
+    -->
+
+    <param name="startup-script" value="startup_script_1.lua"/>
+    <param name="startup-script" value="startup_script_2.lua arg_1 arg_2"/>
+
+  </settings>
+</configuration>
