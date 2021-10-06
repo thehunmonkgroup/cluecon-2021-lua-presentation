@@ -35,7 +35,13 @@
 =========
 * Fast
 <br>
+  Frequently cited as one of the fastest scripting languages
+<br>
 * Simple and elegant
+<br>
+  * Table, the one complex data structure
+<br>
+  * Meta-mechanisms
 
 ----
 
@@ -55,5 +61,10 @@
 * conf/autoload_configs/lua.conf.xml
 <br>
 * module-directory: shared libraries
-<br>
 * script-directory: scripts
+<br>
+* Scripts
+  * ```[base_dir]/scripts```
+
+https://hub.packtpub.com/scripting-freeswitch-lua/
+https://freeswitch.org/confluence/display/FREESWITCH/mod_lua
