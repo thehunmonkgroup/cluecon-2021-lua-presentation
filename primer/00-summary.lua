@@ -5,19 +5,21 @@
 -- This is a comment.
 -- Variable declaration.
 foo = 1.25 -- Floating point numbers.
-bar = "baz"
+-- Can use letters, digits, and underscore.
+_bar_123 = "baz" -- String.
 
 -- Tables, the one complex data structure.
 -- These can be nested.
-table1 = {10, 20, 30} -- Create an ordered list.
+table_1 = {10, 20, 30} -- Create an ordered list.
 value = table1[1] -- value is 10.
 -- Create a record-style table, this is not ordered!
-table2 = { foo = "bar", baz = "bang", }
+table_2 = { foo = "bar", baz = "bang", }
 another_value = table2.bar -- another_value is "baz".
 
 
 -- Strings.
-newstring = "foo" .. "bar" -- Concatenation.
+new_string = "foo" .. "bar" -- Concatenation.
+another_string = [[Another way to declare]]
 string.format("%s/%s", "foo", "bar") -- String formatting.
 
 -- Conditionals
@@ -38,5 +40,10 @@ end
 function foo(bar)
   -- This variable is local to the function.
   local result = bar - 1
+  if bar < 0 then
+    -- This variable is local to the if block.
+    local message = "Less than 0"
+    print(message)
+  end
   return result
 end

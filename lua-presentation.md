@@ -2,7 +2,26 @@
 %author: Chad Phillips
 %date: 2021-10-28
 
+
 <br>
+-> Overview <-
+=========
+
+<br>
+* What is Lua?
+<br>
+* Language primer
+<br>
+* Integration with FreeSWITCH
+<br>
+* Examples
+  * Basic
+  * Advanced
+<br>
+* Tips and tricks
+
+----
+
 -> What is Lua? <-
 =========
 <br>
@@ -17,7 +36,6 @@
 -> What is Lua? <-
 =========
 * Small
-<br>
 
 
 ```
@@ -34,14 +52,15 @@
 -> What is Lua? <-
 =========
 * Fast
-<br>
   Frequently cited as one of the fastest scripting languages
 <br>
 * Simple and elegant
 <br>
   * Table, the one complex data structure
 <br>
-  * Meta-mechanisms
+  * Meta-mechanism
+    * `setmetatable()`: metadata table for another table
+    * Allows object-oriented programming
 
 ----
 
@@ -53,18 +72,28 @@
 
 ----
 
--> Configuration in FreeSWITCH <-
+->  Integration with FreeSWITCH -- configuration <-
 =========
 
 <br>
 
 * conf/autoload_configs/lua.conf.xml
 <br>
-* module-directory: shared libraries
-* script-directory: scripts
+  * module-directory: shared libraries
+  * script-directory: scripts
 <br>
 * Scripts
-  * ```[base_dir]/scripts```
+  * `[base_dir]/scripts`
+
+----
+
+->  Integration with FreeSWITCH -- objects <-
+=========
+
+<br>
+* `freeswitch`: global object
+<br>
+* `session`: session object
 
 https://hub.packtpub.com/scripting-freeswitch-lua/
 https://freeswitch.org/confluence/display/FREESWITCH/mod_lua

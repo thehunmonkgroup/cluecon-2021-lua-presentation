@@ -1,6 +1,11 @@
 <configuration name="lua.conf" description="LUA Configuration">
   <settings>
 
+    <param name="module-directory" value="/usr/lib/x86_64-linux-gnu/lua/5.2/?.so"/>
+
+    <param name="script-directory" value="$${base_dir}/scripts/?.lua"/>
+    <param name="script-directory" value="/usr/share/lua/5.2/?.lua"/>
+
     <!--
 
       $${base_dir}: FreeSWITCH base dir.
@@ -18,12 +23,10 @@
 
       Multiple declarations supported.
 
+      For more detail, see the documentation for the 'require' function in Lua:
+        https://www.lua.org/pil/8.1.html
+
     -->
-
-    <param name="module-directory" value="/usr/lib/x86_64-linux-gnu/lua/5.2/?.so"/>
-
-    <param name="script-directory" value="$${base_dir}/scripts/?.lua"/>
-    <param name="script-directory" value="/usr/share/lua/5.2/?.lua"/>
 
   </settings>
 </configuration>
