@@ -95,5 +95,16 @@
 <br>
 * `session`: session object
 
+----
+
+->  Examples <-
+=========
+
+* Just a taste
+* Check out the [FreeSWITCH/Lua wiki pages](https://freeswitch.org/confluence/display/FREESWITCH/mod_lua)
+
+----
+
 https://hub.packtpub.com/scripting-freeswitch-lua/
 https://freeswitch.org/confluence/display/FREESWITCH/mod_lua
+https://tinyurl.com/cluecon-2021-lua-talk
