@@ -95,13 +95,45 @@
 <br>
 * `session`: session object
 
-----
-
 ->  Examples <-
 =========
 
 * Just a taste
 * Check out the [FreeSWITCH/Lua wiki pages](https://freeswitch.org/confluence/display/FREESWITCH/mod_lua)
+
+----
+
+->  Integration with FreeSWITCH -- executing scripts <-
+=========
+
+<br>
+* `lua`
+  * Runs in current thread
+  * Waits for script completion
+<br>
+* `luarun`
+  * Runs in separate thread
+  * Returns immediately
+<br>
+* Console
+  * `lua example.lua`
+<br>
+* Dialplan
+  * `<action application="lua" data="example.lua"/>`
+
+----
+
+->  Tips <-
+=========
+
+<br>
+1. Debug with inspect.lua
+<br>
+  * Pretty output of any variable
+  * [https://github.com/kikito/inspect.lua](https://github.com/kikito/inspect.lua)
+2. Parse JSON
+  * No native JSON parser
+  * Use `freeswitch.JSON()`
 
 ----
 
