@@ -6,14 +6,14 @@
 -- freeswitch.msleep(3000)
 -- An array-style table, with index keys.
 local log_levels = {
-  "console",
-  "alert",
-  "crit",
-  "err",
-  "warning",
-  "notice",
-  "info",
   "debug",
+  "info",
+  "notice",
+  "warning",
+  "err",
+  "crit",
+  "alert",
+  "console",
 }
 -- ipairs iterates by index, so order is preserved.
 for _, level in ipairs(log_levels) do
