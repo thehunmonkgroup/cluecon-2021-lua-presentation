@@ -12,3 +12,5 @@ complex = {
 }
 -- value is two
 value = complex[1].one
+
+-- vim: number

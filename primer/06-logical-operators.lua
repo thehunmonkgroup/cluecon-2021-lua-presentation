@@ -9,3 +9,5 @@ foo = "foo" or "bar" returns "foo"
 foo = false or nil -- returns nil
 foo = true and "bar" or "baz" -- returns bar
 foo = false and "bar" or "baz" -- returns baz
+
+-- vim: number

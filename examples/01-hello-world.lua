@@ -21,3 +21,5 @@ for _, level in ipairs(log_levels) do
 end
 -- TODO: This prevents the ERR message in console.
 --stream:write("done")
+
+-- vim: number

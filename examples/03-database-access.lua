@@ -27,3 +27,5 @@ local row_callback = function(data)
 end
 -- Functions are first class objects in Lua, and can be passed as arguments.
 dbh:query(sql, row_callback)
+
+-- vim: number

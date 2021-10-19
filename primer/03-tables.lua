@@ -15,3 +15,5 @@ table2 = {
   bang = "zoom",
 }
 another_value = table2.bar -- another_value is "baz"
+
+-- vim: number

@@ -19,3 +19,4 @@ local json_string = webservice.get_weather_data("15001")
 local data = json:decode(json_string)
 freeswitch.consoleLog("notice", inspect(data))
 
+-- vim: number

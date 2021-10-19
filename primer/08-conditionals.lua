@@ -13,3 +13,5 @@ elseif foo == "bar" then
 else
   -- Ok, do this
 end
+
+-- vim: number

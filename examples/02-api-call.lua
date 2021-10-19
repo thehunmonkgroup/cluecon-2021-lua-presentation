@@ -5,3 +5,5 @@
 local api = freeswitch.API()
 local status = api:execute("status")
 freeswitch.consoleLog("notice", status)
+
+-- vim: number

@@ -17,3 +17,5 @@ end
 -- Functions are first class values.
 a_function = is_true
 a_function(true)
+
+-- vim: number

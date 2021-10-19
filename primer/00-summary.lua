@@ -47,3 +47,5 @@ function foo(bar)
   end
   return result
 end
+
+-- vim: number

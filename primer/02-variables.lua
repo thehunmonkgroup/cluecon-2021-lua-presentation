@@ -13,3 +13,5 @@ foo = true
 bar = false
 -- Null.
 baz = nil
+
+-- vim: number

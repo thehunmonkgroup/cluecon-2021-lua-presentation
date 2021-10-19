@@ -6,3 +6,5 @@
 local inspect = require("inspect")
 
 freeswitch.consoleLog("notice", inspect(freeswitch))
+
+-- vim: number

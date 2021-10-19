@@ -39,3 +39,5 @@ end
 -- Return the table of methods, this is what 'require' will return in the
 -- calling script.
 return _M
+
+-- vim: number

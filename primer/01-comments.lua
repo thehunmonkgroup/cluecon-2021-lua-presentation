@@ -6,3 +6,5 @@
 -- Single line comments start with two dashes.
 
 a_variable = a_value -- Inline comment.
+
+-- vim: number
