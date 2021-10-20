@@ -22,10 +22,11 @@ function _M.get_weather_data(zip, api_key)
 
   local body, status_code, headers, status_description = https.request(endpoint)
 
-  freeswitch.consoleLog("notice", string.format([[STATUS CODE: %d]], status_code))
-  freeswitch.consoleLog("notice", string.format([[DATA: %s]], body))
   if status_code == 200 then
+    freeswitch.consoleLog("notice", string.format([[DATA: %s]], body))
     return body
+  else
+    freeswitch.consoleLog("warning", string.format([[Could not call webservice: %s, %s]], status_code, status_description))
   end
 end
 

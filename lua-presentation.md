@@ -2,8 +2,37 @@
 %author: Chad Phillips
 %date: 2021-10-28
 
+<br>
+-> About me <-
+=========
 
 <br>
+* Using FreeSWITCH since 2008
+* Build complex call flows in Lua
+* Wrote Comedian Mail replica in FreeSWITCH/Lua
+
+----
+
+-> Context for the talk <-
+=========
+
+<br>
+* Assuming you
+  * Are familiar with:
+    * Basic programming concepts
+    * FreeSWITCH
+  * Are not as familiar with:
+    * Lua
+    * FreeSWITCH/Lua integration
+<br>
+* So much I could cover!
+* Goals
+  * Intro to Lua and integration into FreeSWITCH
+  * Show off some capabilities
+  * Point to further resources
+
+----
+
 -> Overview <-
 =========
 
@@ -72,30 +101,23 @@
 
 ----
 
-->  Integration with FreeSWITCH -- configuration <-
+-> Integration with FreeSWITCH -- configuration <-
 =========
 
 <br>
-
-* conf/autoload_configs/lua.conf.xml
+* `mod_lua`: compiled and loaded
 <br>
-  * module-directory: shared libraries
-  * script-directory: scripts
+* Config: `conf/autoload_configs/lua.conf.xml`
+<br>
+  * `module-directory`: shared libraries
+  * `script-directory`: scripts
 <br>
 * Scripts
   * `[base_dir]/scripts`
 
 ----
 
-->  Integration with FreeSWITCH -- objects <-
-=========
-
-<br>
-* `freeswitch`: global object
-<br>
-* `session`: session object
-
-->  Examples <-
+-> Examples <-
 =========
 
 * Just a taste
@@ -103,7 +125,19 @@
 
 ----
 
-->  Integration with FreeSWITCH -- executing scripts <-
+-> Integration with FreeSWITCH -- objects <-
+=========
+
+<br>
+* `freeswitch`: global object
+<br>
+* `session`: session object
+<br>
+* There are others, check [the doc](https://freeswitch.org/confluence/display/FREESWITCH/Lua+API+Reference)
+
+----
+
+-> Integration with FreeSWITCH -- executing scripts <-
 =========
 
 <br>
@@ -123,6 +157,27 @@
 
 ----
 
+-> What else can you do? <-
+=========
+
+<br>
+* Get/set session/global variables
+* Events
+  * Fire new: `freeswitch.Event()`
+  * Consume: `freeswitch.EventConsumer()`
+* Call management
+  * Initiate new: `session:originate()`
+  * Record audio `session:recordFile()`
+  * Fire callback function on hangup: `session:setHangupHook()`
+  * Dozens of other methods
+* IVR Menus: `freeswitch.IVRMenu()`
+* Send email
+  * `freeswitch.email()`
+  * Third party libraries
+* ...and more...
+
+----
+
 ->  Tips <-
 =========
 
@@ -134,9 +189,13 @@
 2. Parse JSON
   * No native JSON parser
   * Use `freeswitch.JSON()`
+3. Read the excellent documentation
+  * [Programming in Lua (PIL)](https://www.lua.org/pil/)
+  * [FreeSWITCH/Lua API reference](https://freeswitch.org/confluence/display/FREESWITCH/Lua+API+Reference)
 
 ----
 
 https://hub.packtpub.com/scripting-freeswitch-lua/
 https://freeswitch.org/confluence/display/FREESWITCH/mod_lua
 https://tinyurl.com/cluecon-2021-lua-talk
+pjsua --config-file ~/pjsip/1002.cfg
