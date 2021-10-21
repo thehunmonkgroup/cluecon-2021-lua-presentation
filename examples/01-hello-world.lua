@@ -19,7 +19,5 @@ local log_levels = {
 for _, level in ipairs(log_levels) do
   freeswitch.consoleLog(level, "Hello world!")
 end
--- TODO: This prevents the ERR message in console.
---stream:write("done")
 
 -- vim: number

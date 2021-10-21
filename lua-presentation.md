@@ -162,9 +162,11 @@
 
 <br>
 * Get/set session/global variables
+<br>
 * Events
   * Fire new: `freeswitch.Event()`
   * Consume: `freeswitch.EventConsumer()`
+<br>
 * Call management
   * Initiate new: `session:originate()`
   * Record audio `session:recordFile()`

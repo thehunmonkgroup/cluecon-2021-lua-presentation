@@ -14,7 +14,7 @@ local encoded_json = json:encode(data)
 freeswitch.consoleLog("notice", encoded_json)
 
 -- Decoding JSON.
-local webservice = require("examples.04-webservice-call")
+local webservice = require("examples.05-webservice-call")
 local json_string = webservice.get_weather_data("15001")
 local data = json:decode(json_string)
 freeswitch.consoleLog("notice", inspect(data))
