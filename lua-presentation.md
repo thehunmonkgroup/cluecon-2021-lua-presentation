@@ -36,17 +36,12 @@
 -> Overview <-
 =========
 
-<br>
 * What is Lua?
-<br>
 * Language primer
-<br>
 * Integration with FreeSWITCH
-<br>
 * Examples
   * Basic
   * Advanced
-<br>
 * Tips and tricks
 
 ----
@@ -144,14 +139,12 @@
 * `lua`
   * Runs in current thread
   * Waits for script completion
-<br>
 * `luarun`
   * Runs in separate thread
   * Returns immediately
 <br>
 * Console
   * `lua example.lua`
-<br>
 * Dialplan
   * `<action application="lua" data="example.lua"/>`
 
@@ -172,10 +165,13 @@
   * Record audio `session:recordFile()`
   * Fire callback function on hangup: `session:setHangupHook()`
   * Dozens of other methods
+<br>
 * IVR Menus: `freeswitch.IVRMenu()`
+<br>
 * Send email
   * `freeswitch.email()`
   * Third party libraries
+<br>
 * ...and more...
 
 ----
@@ -188,16 +184,20 @@
 <br>
   * Pretty output of any variable
   * [https://github.com/kikito/inspect.lua](https://github.com/kikito/inspect.lua)
+<br>
 2. Parse JSON
+<br>
   * No native JSON parser
   * Use `freeswitch.JSON()`
+<br>
 3. Read the excellent documentation
+<br>
   * [Programming in Lua (PIL)](https://www.lua.org/pil/)
   * [FreeSWITCH/Lua API reference](https://freeswitch.org/confluence/display/FREESWITCH/Lua+API+Reference)
 
-----
-
+<!---
 https://hub.packtpub.com/scripting-freeswitch-lua/
 https://freeswitch.org/confluence/display/FREESWITCH/mod_lua
 https://tinyurl.com/cluecon-2021-lua-talk
 pjsua --config-file ~/pjsip/1002.cfg
+-->

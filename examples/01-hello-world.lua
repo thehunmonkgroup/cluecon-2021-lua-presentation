@@ -3,7 +3,7 @@
 ]]
 
 -- Wait three seconds.
--- freeswitch.msleep(3000)
+--freeswitch.msleep(3000)
 -- An array-style table, with index keys.
 local log_levels = {
   "debug",
