@@ -1,3 +1,7 @@
+--[[
+  Example #3: Collect DTMF input from a user.
+]]
+
 KILL_DIGIT = "9"
 
 -- The input callback function.
