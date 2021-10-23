@@ -171,6 +171,8 @@
   * `freeswitch.email()`
   * Third party libraries
 <br>
+* Serve dialplan config: [doc](https://freeswitch.org/confluence/display/FREESWITCH/Serving+Configuration+with+Lua)
+<br>
 * ...and more...
 
 ----
@@ -193,10 +195,3 @@
 <br>
   * [Programming in Lua (PIL)](https://www.lua.org/pil/)
   * [FreeSWITCH/Lua API reference](https://freeswitch.org/confluence/display/FREESWITCH/Lua+API+Reference)
-
-<!---
-https://hub.packtpub.com/scripting-freeswitch-lua/
-https://freeswitch.org/confluence/display/FREESWITCH/mod_lua
-https://tinyurl.com/cluecon-2021-lua-talk
-pjsua --config-file ~/pjsip/1002.cfg
--->
