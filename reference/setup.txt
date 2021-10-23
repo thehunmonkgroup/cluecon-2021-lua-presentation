@@ -1,0 +1,12 @@
+startup union1-east.local
+remove union1-east-pbx.al-dev.com for 10.1.2.91 from /etc/hosts
+ping union1-east-pbx.al-dev.com and verify connectivity
+service nftables restart && service nftables stop && nftless
+set up terminal windows/tab per tabs.png
+set up gvim window on left
+make sure all text in tabs is sized correctly
+pjsua --config-file ~/pjsip/1002.cfg
+run in main fs window:
+    luarun examples/01-hello-world.lua
+    lua examples/01-hello-world.lua
+place test calls for all examples/tips
