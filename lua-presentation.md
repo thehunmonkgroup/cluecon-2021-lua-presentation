@@ -7,6 +7,7 @@
 =========
 
 <br>
+* CTO, Apartment Lines
 * Using FreeSWITCH since 2008
 * Build complex call flows in Lua
 * Wrote Comedian Mail replica in FreeSWITCH/Lua
