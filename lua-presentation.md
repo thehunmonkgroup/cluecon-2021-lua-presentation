@@ -113,14 +113,6 @@
 
 ----
 
--> Examples <-
-=========
-
-* Just a taste
-* Check out the [FreeSWITCH/Lua wiki pages](https://freeswitch.org/confluence/display/FREESWITCH/mod_lua)
-
-----
-
 -> Integration with FreeSWITCH -- objects <-
 =========
 
@@ -129,6 +121,14 @@
 <br>
 * `session`: session object
 * There are others, check [the doc](https://freeswitch.org/confluence/display/FREESWITCH/Lua+API+Reference)
+
+----
+
+-> Examples <-
+=========
+
+* Just a taste
+* Check out the [FreeSWITCH/Lua wiki pages](https://freeswitch.org/confluence/display/FREESWITCH/mod_lua)
 
 ----
 
