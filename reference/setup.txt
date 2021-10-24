@@ -12,5 +12,7 @@ run in main fs window:
     luarun examples/01-hello-world.lua
     lua examples/01-hello-world.lua
 place test calls for all examples/tips
+set lappy mic/speakers in system settings
+put in earbuds
 call in conference, place on left screen
 set up countup timer, start with talk
