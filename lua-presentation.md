@@ -120,6 +120,7 @@
 * `freeswitch`: global object
 <br>
 * `session`: session object
+<br>
 * There are others, check [the doc](https://freeswitch.org/confluence/display/FREESWITCH/Lua+API+Reference)
 
 ----
