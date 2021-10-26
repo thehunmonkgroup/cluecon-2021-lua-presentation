@@ -1,5 +1,5 @@
 --[[
-  Example #4: Calling an external webservice.
+  Example #5: Calling an external webservice.
 ]]
 
 -- This is a standard way of implementing a consumable module in Lua.

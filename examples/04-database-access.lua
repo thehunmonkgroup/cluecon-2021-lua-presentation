@@ -1,5 +1,5 @@
 --[[
-  Example #3: Accessing a database.
+  Example #4: Accessing a database.
 ]]
 
 -- FreeSWITCH provides native ODBC database access, you just need to configure
