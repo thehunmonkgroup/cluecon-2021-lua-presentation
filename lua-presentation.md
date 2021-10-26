@@ -6,7 +6,6 @@
 -> About me <-
 =========
 
-<br>
 * CTO, Apartment Lines
 * Using FreeSWITCH since 2008
 * Build complex call flows in Lua
