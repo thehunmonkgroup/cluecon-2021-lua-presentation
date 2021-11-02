@@ -1,4 +1,3 @@
 https://hub.packtpub.com/scripting-freeswitch-lua/
 https://freeswitch.org/confluence/display/FREESWITCH/mod_lua
 https://tinyurl.com/cluecon-2021-lua-talk
-pjsua --config-file ~/pjsip/1002.cfg

@@ -1,0 +1,69 @@
+<include>
+
+  <!--
+    Example #1: Hello world.
+  -->
+  <extension name="hello-world">
+    <condition field="destination_number" expression="^hello-world$" break="on-true">
+      <action application="lua" data="examples/01-hello-world.lua"/>
+    </condition>
+  </extension>
+
+  <!--
+    Example #2: Hello world.
+  -->
+  <extension name="api-call">
+    <condition field="destination_number" expression="^api-call$" break="on-true">
+      <action application="lua" data="examples/02-api-call.lua"/>
+    </condition>
+  </extension>
+
+  <!--
+    Example #3: Collect DTMF.
+  -->
+  <extension name="collect-dtmf">
+    <condition field="destination_number" expression="^collect-dtmf$" break="on-true">
+      <action application="lua" data="examples/03-collect-dtmf.lua"/>
+    </condition>
+  </extension>
+
+  <!--
+    Example #4: Database access.
+  -->
+  <extension name="database-access">
+    <condition field="destination_number" expression="^database-access$" break="on-true">
+      <action application="lua" data="examples/04-database-access.lua"/>
+    </condition>
+  </extension>
+
+  <!--
+    Example #5: Web service call.
+  -->
+  <extension name="webservice-call">
+    <condition field="destination_number" expression="^webservice-call$" break="on-true">
+      <action application="lua" data="examples/05-webservice-call.lua 15001"/>
+    </condition>
+  </extension>
+
+  <!--
+    Tip #1: Debug with inspect.
+  -->
+  <extension name="debug-with-inspect">
+    <condition field="destination_number" expression="^debug-with-inspect$" break="on-true">
+      <action application="lua" data="tips/01-debug-with-inspect.lua 15001"/>
+    </condition>
+  </extension>
+
+  <!--
+    Tip #2: Parse JSON.
+  -->
+  <extension name="parse-json">
+    <condition field="destination_number" expression="^parse-json$" break="on-true">
+      <action application="lua" data="tips/02-parse-json.lua 15001"/>
+    </condition>
+  </extension>
+
+</include>
+<!--
+  vim: number
+-->
